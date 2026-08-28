@@ -82,7 +82,7 @@ def check_mcp_server():
     """Check if MCP server is accessible"""
     print("\n🔍 Checking MCP server connectivity...")
     
-    server_url = "https://weather-mcp-server-oze7nwnjba-as.a.run.app"
+    server_url = os.getenv("MCP_SERVER_URL", "http://localhost:8085/mcp")
     
     try:
         import httpx

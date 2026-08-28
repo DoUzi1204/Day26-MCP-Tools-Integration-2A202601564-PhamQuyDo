@@ -15,6 +15,10 @@ MCP_SERVER_URL = "http://localhost:8085/mcp"
 logger.info(f"🌐 Initializing weather agent with remote MCP server")
 logger.info(f"📡 MCP Server: {MCP_SERVER_URL}")
 
+import os
+
+MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
+
 try:
     # Create connection parameters for the remote MCP server
     connection_params = StreamableHTTPConnectionParams(
@@ -32,10 +36,10 @@ try:
     # Create the agent with remote MCP tools
     root_agent = Agent(
         name="weather_agent",
-        model="gemini-2.5-flash",
+        model=MODEL_NAME,
         tools=[weather_tools],
     )
-    logger.info("✅ Weather agent initialized with remote MCP tools:")
+    logger.info(f"✅ Weather agent initialized with remote MCP tools ({MODEL_NAME}):")
     logger.info("   - get_current_weather(city)")
     logger.info("   - get_forecast(city, days)")
     logger.info("   - health_check()")
@@ -51,6 +55,6 @@ except Exception as e:
     logger.warning("⚠️  Creating fallback agent without MCP tools")
     root_agent = Agent(
         name="weather_agent",
-        model="gemini-2.5-flash",
+        model=MODEL_NAME,
     )
 
