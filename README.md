@@ -18,13 +18,20 @@ day26-mcp/
 │   ├── weather_server.py
 │   └── weather_client.py
 │
-└── 03-production/           ← Bước 3: Auth, Tool Registry, Versioning
-    ├── README.md
-    ├── auth_server.py
-    ├── auth_client.py
-    ├── registry.json
-    ├── registry_client.py
-    └── versioned_server.py
+├── 03-production/           ← Bước 3: Auth, Tool Registry, Versioning
+│   ├── README.md
+│   ├── auth_server.py
+│   ├── auth_client.py
+│   ├── registry.json
+│   ├── registry_client.py
+│   └── versioned_server.py
+│
+└── my-mcp-server/           ← Bài tập thực hành Custom MCP Server (Day 26)
+    ├── server.py            ← File chạy MCP Server (Auth, Versioning)
+    ├── client.py            ← File test Client
+    ├── requirements.txt
+    ├── data/orders.json
+    └── README.md
 ```
 
 ## Quick start

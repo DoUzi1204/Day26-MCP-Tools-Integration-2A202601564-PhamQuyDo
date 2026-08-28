@@ -1,0 +1,34 @@
+[
+  {
+    "id": "ORD001",
+    "status": "done",
+    "customer": "Nguyen Van A",
+    "items": ["Laptop", "Mouse"],
+    "total": 15000000,
+    "updated_at": "2026-08-28T10:00:00"
+  },
+  {
+    "id": "ORD002",
+    "status": "processing",
+    "customer": "Tran Thi B",
+    "items": ["Keyboard"],
+    "total": 1500000,
+    "updated_at": "2026-08-28T11:30:00"
+  },
+  {
+    "id": "ORD003",
+    "status": "done",
+    "customer": "Le Van C",
+    "items": ["Monitor 27 inch"],
+    "total": 4500000,
+    "updated_at": "2026-08-27T15:00:00"
+  },
+  {
+    "id": "ORD004",
+    "status": "cancelled",
+    "customer": "Pham Quy D",
+    "items": ["Headphone"],
+    "total": 800000,
+    "updated_at": "2026-08-26T09:15:00"
+  }
+]
