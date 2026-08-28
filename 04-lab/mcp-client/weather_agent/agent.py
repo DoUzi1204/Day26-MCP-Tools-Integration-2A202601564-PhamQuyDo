@@ -17,7 +17,7 @@ logger.info(f"📡 MCP Server: {MCP_SERVER_URL}")
 
 import os
 
-MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
+MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
 
 try:
     # Create connection parameters for the remote MCP server

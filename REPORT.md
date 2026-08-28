@@ -59,6 +59,17 @@ Bài thực hành nhằm làm chủ hai công nghệ cốt lõi trong xây dựn
 
 ---
 
-## 4. KẾT LUẬN
+## 4. HÌNH ẢNH MINH CHỨNG THỰC NGHIỆM
+
+Dưới đây là hình ảnh thực nghiệm chạy thành công bài Lab 04 trên giao diện Google Agent Development Kit (ADK) Web UI:
+- **Thực thi Tool `get_current_weather`:** Lấy thành công dữ liệu thời tiết hiện tại tại Hà Nội.
+- **Thực thi Tool `get_forecast`:** Lấy thành công dữ liệu dự báo thời tiết 3 ngày tới tại Đà Nẵng.
+- **Biểu đồ Execution Trace (Bên trái):** Hiển thị rõ luồng điều phối từ `weather_agent` tới `McpToolset` qua Streamable HTTP Transport.
+
+![Minh chứng kết quả Lab 04](img/image.png)
+
+---
+
+## 5. KẾT LUẬN
 
 Bài lab đã hoàn thành **100% các yêu cầu đề ra**, xây dựng thành công kiến trúc Agent phân tán hoàn chỉnh từ Server cung cấp Tool đến Client Web tương tác người dùng.
